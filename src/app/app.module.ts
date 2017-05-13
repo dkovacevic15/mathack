@@ -8,6 +8,8 @@ import { HttpModule } from '@angular/http';
 
 import { Routes, RouterModule } from '@angular/router';
 
+import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -38,7 +40,8 @@ const appRoutes: Routes =
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    Ng2AutoCompleteModule
   ],
   providers: [
     ModelService,
