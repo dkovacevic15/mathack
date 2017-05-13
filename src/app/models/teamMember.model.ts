@@ -8,8 +8,8 @@ export class TeamMember {
     public id: number,
     public name: string,
     public description: string,
-    public user: User,
     
+    public user: User,
     public reqSkills: Skill[]
     ) { }
 }

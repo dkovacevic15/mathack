@@ -1,6 +1,6 @@
 import { ModelService } from './services/model.service';
 import { Component, OnInit } from '@angular/core';
-
+import { User } from './models/user.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
