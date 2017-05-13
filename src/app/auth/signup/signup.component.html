@@ -1,15 +1,18 @@
-<div class="row">
-  <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md offset-2">
-    <form (ngSubmit)="onSignup()" #f="ngForm">
-      <div class="form-group">
-        <label for="email">Mail: </label>
-        <input type="email" id="email" ngModel class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" ngModel class="form-control">
-      </div>
-      <button type="submit">Sign up!</button>
-    </form>
-  </div>
+<div id="fullscreen_bg" class="fullscreen_bg">
+
+    <div class="container">
+
+        <form class="form-signin">
+            <h1 class="form-signin-heading text-muted">Sign up</h1>
+            
+            <input type="text" class="form-control" placeholder="Name" required="" autofocus="">
+            <input type="email" class="form-control" placeholder="E-mail" required="" autofocus="">
+            <input type="password" class="form-control" placeholder="Password" required="">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">
+			Sign In
+		</button>
+        </form>
+
+    </div>
+
 </div>
