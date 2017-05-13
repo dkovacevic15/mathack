@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AuthService {
 
-  public signedIn: boolean;
+  public signedIn: boolean = false;
   public authKey: any;
 
   signUp(email: string, password: string) {
@@ -17,6 +17,7 @@ export class AuthService {
   signOut() {
     
   }
+
   constructor() { }
 
 }
