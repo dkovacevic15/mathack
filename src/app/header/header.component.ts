@@ -14,12 +14,13 @@ export class HeaderComponent implements OnInit {
     'Niz',
     'Rezultata'
   ]
-  
+
   constructor(
     private authService: AuthService
   ) { }
 
   ngOnInit() {
+
   }
 
   clickedHome() {
@@ -31,7 +32,6 @@ export class HeaderComponent implements OnInit {
   }
 
   signedIn() {
-    return true;
-    // return this.authService.signedIn();
+    return this.authService.signedIn;
   }
 }
