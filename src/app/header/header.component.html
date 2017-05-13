@@ -1,4 +1,8 @@
 <ul>
-  <li><a href="#" (onClick)="clickedHome()">Home</a></li>
-  <li><a href="#" (OnClick)="clickedTeams()">Teams</a></li>
+  <li *ngIf="this.authService.signedIn">
+    <a href="#" (onClick)="clickedHome()">Home</a>
+  </li>
+  <li *ngIf="this.authService.signedIn">
+    <a href="#" (OnClick)="clickedTeams()">Teams</a>
+  </li>
 </ul>
