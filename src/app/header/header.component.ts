@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  
   constructor(
     private authService: AuthService
   ) { }
@@ -21,5 +22,9 @@ export class HeaderComponent implements OnInit {
 
   clickedTeams() {
     alert('Clicked teams');
+  }
+
+  signedIn() {
+    return true;
   }
 }
