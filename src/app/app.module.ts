@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { TeamspageComponent } from './teamspage/teamspage.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomepageComponent,
-    TeamspageComponent
+    TeamspageComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
