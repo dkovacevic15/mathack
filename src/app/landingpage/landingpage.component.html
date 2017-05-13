@@ -1,3 +1,4 @@
-<p>
-  landingpage works!
-</p>
+<app-signup
+*ngIf="!signedIn()"></app-signup>
+<app-homepage
+*ngIf="signedIn()"></app-homepage>
