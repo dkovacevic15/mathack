@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
+  currentUser: User = undefined;
   constructor (private modelService: ModelService) { }
 
   ngOnInit() {

@@ -1,3 +1,4 @@
+import { AuthService } from './services/auth.service';
 import { ModelService } from './services/model.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { TeamspageComponent } from './teamspage/teamspage.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
+import { LandingpageComponent } from './landingpage/landingpage.component';
 
 @NgModule({
   declarations: [
@@ -18,14 +20,18 @@ import { SigninComponent } from './auth/signin/signin.component';
     HomepageComponent,
     TeamspageComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    LandingpageComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [ModelService],
+  providers: [
+    ModelService,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
