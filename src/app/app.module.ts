@@ -1,3 +1,4 @@
+import { TeamsComponent } from './team/teams/teams.component';
 import { AuthService } from './services/auth.service';
 import { ModelService } from './services/model.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,8 +20,9 @@ const appRoutes: Routes =
 [
   { path: 'home',   component: LandingpageComponent },
   { path: 'signup', component: LandingpageComponent },
-  { path: 'signin', component: SigninComponent }
-]
+  { path: 'signin', component: SigninComponent },
+  { path: 'teams',  component: TeamspageComponent }
+];
 
 @NgModule({
   declarations: [
