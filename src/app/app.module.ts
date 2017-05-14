@@ -23,7 +23,8 @@ const appRoutes: Routes =
   { path: 'home',   component: LandingpageComponent },
   { path: 'signup', component: LandingpageComponent },
   { path: 'signin', component: SigninComponent },
-  { path: 'teams',  component: TeamspageComponent }
+  { path: 'teams',  component: TeamspageComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
