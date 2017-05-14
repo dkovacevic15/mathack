@@ -1,3 +1,4 @@
+import { TeamMember } from './../models/teamMember.model';
 import { Skill } from './../models/skill.model';
 import { User } from './../models/user.model';
 import { Team } from './../models/team.model';
@@ -25,7 +26,7 @@ export class ModelService {
         2
       )
     ]);
-  
+
   public potentialTeams: Team[]
   =
   [
@@ -34,7 +35,38 @@ export class ModelService {
       'prvi',
       'pa prvi',
       null,
-      [],
+      [
+        new TeamMember(
+          6,
+          'pozicija 1',
+          'opis pozicije 1',
+          new User(
+            'Himel',
+            36,
+            15,
+            15,
+            'dubismrda@gmail.com',
+            'dubismrda',
+            '555-333',
+            []
+          ),
+          []),
+        new TeamMember(
+          79,
+          'pozicija 2',
+          'opis pozicije 2',
+          new User(
+            'Strujadin',
+            39,
+            20,
+            20,
+            'helloimmrgay@gmail.com',
+            'dubismrdabutitsactuallyfunny',
+            '555-333 jer je drugi put jos urnebesnije',
+            []
+          ),
+          [])
+      ],
       44.8724,
       20.6493,
       0

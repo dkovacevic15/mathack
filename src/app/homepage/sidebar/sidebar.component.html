@@ -9,7 +9,9 @@
           </div>
           <div class="col-sm-4">
             <h4 class="pull-right">
-              <small><em>RASTOJANJE OVDE<br>{{ team.teamUsers }}</em></small>
+              <small><em>RASTOJANJE OVDE<br>
+              <span *ngFor="let member of team.teamUsers"> {{ member.user.name }} </span>
+              </em></small>
             </h4>
           </div>
         </div>

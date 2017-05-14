@@ -1,7 +1,7 @@
-<div *ngIf="!signedIn()">
+<div *ngIf="!this.authService.signedIn">
   <app-signup></app-signup>
 </div>
 
-<div *ngIf="signedIn()">
+<div *ngIf="this.authService.signedIn">
   <app-homepage></app-homepage>
 </div>
