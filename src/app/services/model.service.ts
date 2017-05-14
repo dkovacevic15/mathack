@@ -75,6 +75,89 @@ export class ModelService {
       0
     ),
     new Team(
+      1,
+      'prvi',
+      'pa prvi',
+      null,
+      [
+        new TeamMember(
+          6,
+          'pozicija 1',
+          'opis pozicije 1',
+          new User(
+            'Himel',
+            36,
+            15,
+            15,
+            'dubismrda@gmail.com',
+            'dubismrda',
+            '555-333',
+            []
+          ),
+          []),
+          
+        new TeamMember(
+          79,
+          'pozicija 2',
+          'opis pozicije 2',
+          new User(
+            'Strujadin',
+            39,
+            20,
+            20,
+            'helloimmrgay@gmail.com',
+            'dubismrdabutitsactuallyfunny',
+            '555-333 jer je drugi put jos urnebesnije',
+            []
+          ),
+          [])
+      ],
+      44.8724,
+      20.6493,
+      0
+    ),
+    new Team(
+      1,
+      'prvi',
+      'pa prvi',
+      null,
+      [
+        new TeamMember(
+          6,
+          'pozicija 1',
+          'opis pozicije 1',
+          new User(
+            'Himel',
+            36,
+            15,
+            15,
+            'dubismrda@gmail.com',
+            'dubismrda',
+            '555-333',
+            []
+          ),
+          []),
+        new TeamMember(
+          79,
+          'pozicija 2',
+          'opis pozicije 2',
+          new User(
+            'Strujadin',
+            39,
+            20,
+            20,
+            'helloimmrgay@gmail.com',
+            'dubismrdabutitsactuallyfunny',
+            '555-333 jer je drugi put jos urnebesnije',
+            []
+          ),
+          [])
+      ],
+      44.8724,
+      20.6493,
+      0
+    ),
+    new Team(
       2,
       'drugi',
       'pa drugi',
