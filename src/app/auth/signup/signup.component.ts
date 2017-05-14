@@ -20,11 +20,15 @@ export class SignupComponent implements OnInit {
     const password = form.value.password;
     console.log(email);
     console.log(password);
-    var success = this.authService.signUp(email, password);
-    if (success) {
-      alert('Registration successful');
-    } else {
-      alert('Registration failure');
-    }
+    this.authService.signUp(email, password).
+      then(
+      message => {
+        alert('Registration successful');
+      }
+      ,
+      error => {
+        alert('An error occurred. Check local console');
+        console.log(error);
+      });
   }
 }
