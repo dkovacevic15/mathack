@@ -19,6 +19,10 @@ export class SidebarComponent implements OnInit {
   }
 
   onCollaborateClicked(selectedTeam: Team) {
-    alert('Odabrali ste: ' + selectedTeam.name);
+    this.modelService.attemptMatch(selectedTeam);
+  }
+
+  onDismissClicked(selectedTeam: Team) {
+    this.modelService.dismiss(selectedTeam);
   }
 }
