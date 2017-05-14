@@ -1,3 +1,4 @@
+import { ModelService } from './../services/model.service';
 import { NgForm } from '@angular/forms';
 import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -17,7 +18,8 @@ export class HeaderComponent implements OnInit {
   ]
 
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private modelService: ModelService
   ) { }
 
   ngOnInit() {

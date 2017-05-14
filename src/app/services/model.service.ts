@@ -39,7 +39,7 @@ export class ModelService {
     new Team(
       1,
       'SuperSmo',
-      'SuperSmo je tim sa ciljem da okupi talentovane i motivisane mlade ljude. Nudimo projekte za najrazlicitija interesovanja i potrebne su nam sve vestine koje posedujete. Mi smo pravi izbor.',
+      'Mi smo pravi izbor.',
       new User(
     'apach',
     1,

@@ -1,12 +1,4 @@
 <app-header>
 </app-header>
 
-
-<div class="row">
-  <div *ngIf="this.testing">
-    <app-homepage></app-homepage>
-  </div>
-  <div *ngIf="!this.testing">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<router-outlet></router-outlet>
