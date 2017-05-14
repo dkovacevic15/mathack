@@ -14,18 +14,18 @@ export class ModelService {
   = new User(
     'dukicar',
     0,
-    0,
-    0,
+    44.7796,
+    20.4570,
     'dusankovacevic95@gmail.com',
     'sifra',
     '2515-309',
     [
       new Skill(
-        'Angular (sorta)',
+        'Angular',
         1
       ),
       new Skill(
-        'Being a faggot',
+        'JavaScript',
         2
       )
     ],
@@ -38,63 +38,76 @@ export class ModelService {
   [
     new Team(
       1,
-      'prvi',
-      'pa prvi',
-      null,
+      'SuperSmo',
+      'SuperSmo je tim sa ciljem da okupi talentovane i motivisane mlade ljude. Nudimo projekte za najrazlicitija interesovanja i potrebne su nam sve vestine koje posedujete. Mi smo pravi izbor.',
+      new User(
+    'apach',
+    1,
+    44.7878,
+    20.4652,
+    'appach@hotmail.com',
+    '32451234',
+    '25133253',
+    [
+      new Skill(
+        'Leadership',
+        3
+      ),
+      new Skill(
+        'Java',
+        4
+      )
+    ],
+    'Radovan',
+    'Miletic'),
       [
         new TeamMember(
           6,
-          'pozicija 1',
-          'opis pozicije 1',
+          'Java Developer',
+          'Java developer sa iskustvom u OSGI standardu',
           new User(
-            'dukicar',
-            0,
-            0,
-            0,
-            'dusankovacevic95@gmail.com',
-            'sifra',
-            '2515-309',
+            'pepan44',
+            7,
+            44.8031,
+            20.4596,
+            'pepan44@gmail.com',
+            '666666',
+            '44443333',
             [
               new Skill(
-                'Angular (sorta)',
-                1
+                'Java',
+                5
               ),
               new Skill(
-                'Being a faggot',
-                2
+                'OSGI',
+                6
               )
             ],
-            'Dusan',
-            'Kovacevic'),
-          []),
+            'Aleksandar',
+            'Papanovski'),
+          [
+            new Skill(
+                'Java',
+                5
+              ),
+              new Skill(
+                'OSGI',
+                6
+              )]),
         new TeamMember(
           79,
-          'pozicija 2',
-          'opis pozicije 2',
-          new User(
-            'dukicar',
-            0,
-            0,
-            0,
-            'dusankovacevic95@gmail.com',
-            'sifra',
-            '2515-309',
-            [
-              new Skill(
-                'Angular (sorta)',
-                1
+          'Front-end Developer',
+          'Front-end developer u programu po svom izboru',
+          null,
+          [
+            new Skill(
+                'Front-end',
+                10
               ),
-              new Skill(
-                'Being a faggot',
-                2
-              )
-            ],
-            'Dusan',
-            'Kovacevic'),
-          [])
+          ])
       ],
-      44.8724,
-      20.6493,
+      44.7973, 
+      20.4869,
       0
     ),
     new Team(
