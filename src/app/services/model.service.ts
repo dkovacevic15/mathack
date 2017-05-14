@@ -7,6 +7,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class ModelService {
 
+  public ownedTeams: Team[];
+  public joinedTeams: Team[];
+
   public user: User
   = new User(
     'Dusan Kovacevic',
@@ -84,4 +87,18 @@ export class ModelService {
   ]
   constructor() { }
 
+  attemptMatch(teamToMatch: Team) {
+    const user = this.user;
+    const team = teamToMatch;
+
+    // Request
+  }
+
+  dismiss(teamToDismiss: Team) {
+    var index = this.potentialTeams.indexOf(teamToDismiss);
+    if (index > -1) {
+      this.potentialTeams.splice(index, 1);
+    }
+    // Request
+  }
 }
