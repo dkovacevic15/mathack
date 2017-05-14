@@ -1,3 +1,4 @@
+import { User } from './../../models/user.model';
 import { AuthService } from './../../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -16,19 +17,18 @@ export class SignupComponent implements OnInit {
   }
 
   onSignup(form: NgForm) {
-    const email = form.value.email;
-    const password = form.value.password;
-    console.log(email);
-    console.log(password);
-    this.authService.signUp(email, password).
-      then(
-      message => {
-        alert('Registration successful');
-      }
-      ,
-      error => {
-        alert('An error occurred. Check local console');
-        console.log(error);
-      });
+    const user = new User(
+      form.value.username,
+      0,
+      0,
+      0,
+      form.value.email,
+      form.value.password,
+      '2515309',
+      [],
+      form.value.firstName,
+      form.value.lastName
+    );
+    this.authService.signUp(user);
   }
 }
