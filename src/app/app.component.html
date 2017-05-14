@@ -1,7 +1,12 @@
 <app-header>
 </app-header>
 
-<!--<app-landingpage></app-landingpage>-->
+
 <div style="margin-top: 60px">
-  <app-landingpage></app-landingpage>
+  <div *ngIf="this.testing">
+    <!--PISI OVDE MAJMUNE-->
+  </div>
+  <div *ngIf="!this.testing">
+    <app-landingpage></app-landingpage>
+  </div>
 </div>

@@ -7,7 +7,9 @@ import { User } from './models/user.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-
+  ///////////////////////////////////////////////////
+  public testing: boolean = false;
+  //////////////////////////////////////////////////
   currentUser: User = undefined;
   constructor (private modelService: ModelService) { }
 
