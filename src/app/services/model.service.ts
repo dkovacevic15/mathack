@@ -12,13 +12,13 @@ export class ModelService {
 
   public user: User
   = new User(
-    'Dusan Kovacevic',
-    1,
-    44.8712,
-    20.6620,
+    'dukicar',
+    0,
+    0,
+    0,
     'dusankovacevic95@gmail.com',
     'sifra',
-    '555-333',
+    '2515-309',
     [
       new Skill(
         'Angular (sorta)',
@@ -28,8 +28,11 @@ export class ModelService {
         'Being a faggot',
         2
       )
-    ]);
+    ],
+    'Dusan',
+    'Kovacevic');
 
+  // Teams to be matchmade
   public potentialTeams: Team[]
   =
   [
@@ -44,30 +47,50 @@ export class ModelService {
           'pozicija 1',
           'opis pozicije 1',
           new User(
-            'Himel',
-            36,
-            15,
-            15,
-            'dubismrda@gmail.com',
-            'dubismrda',
-            '555-333',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           []),
         new TeamMember(
           79,
           'pozicija 2',
           'opis pozicije 2',
           new User(
-            'Strujadin',
-            39,
-            20,
-            20,
-            'helloimmrgay@gmail.com',
-            'dubismrdabutitsactuallyfunny',
-            '555-333 jer je drugi put jos urnebesnije',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           [])
       ],
       44.8724,
@@ -85,31 +108,51 @@ export class ModelService {
           'pozicija 1',
           'opis pozicije 1',
           new User(
-            'Himel',
-            36,
-            15,
-            15,
-            'dubismrda@gmail.com',
-            'dubismrda',
-            '555-333',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           []),
-          
+
         new TeamMember(
           79,
           'pozicija 2',
           'opis pozicije 2',
           new User(
-            'Strujadin',
-            39,
-            20,
-            20,
-            'helloimmrgay@gmail.com',
-            'dubismrdabutitsactuallyfunny',
-            '555-333 jer je drugi put jos urnebesnije',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           [])
       ],
       44.8724,
@@ -127,30 +170,50 @@ export class ModelService {
           'pozicija 1',
           'opis pozicije 1',
           new User(
-            'Himel',
-            36,
-            15,
-            15,
-            'dubismrda@gmail.com',
-            'dubismrda',
-            '555-333',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           []),
         new TeamMember(
           79,
           'pozicija 2',
           'opis pozicije 2',
           new User(
-            'Strujadin',
-            39,
-            20,
-            20,
-            'helloimmrgay@gmail.com',
-            'dubismrdabutitsactuallyfunny',
-            '555-333 jer je drugi put jos urnebesnije',
-            []
-          ),
+            'dukicar',
+            0,
+            0,
+            0,
+            'dusankovacevic95@gmail.com',
+            'sifra',
+            '2515-309',
+            [
+              new Skill(
+                'Angular (sorta)',
+                1
+              ),
+              new Skill(
+                'Being a faggot',
+                2
+              )
+            ],
+            'Dusan',
+            'Kovacevic'),
           [])
       ],
       44.8724,
