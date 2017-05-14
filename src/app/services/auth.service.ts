@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class AuthService {
-  public signedIn: boolean = true;
+  public signedIn: boolean = false;
 
   public authKey: any;
   
