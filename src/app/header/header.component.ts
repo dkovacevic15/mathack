@@ -1,3 +1,4 @@
+import { NgForm } from '@angular/forms';
 import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -33,5 +34,10 @@ export class HeaderComponent implements OnInit {
 
   signedIn() {
     return this.authService.signedIn;
+  }
+
+  onSubmit(form: NgForm) {
+    const username = form.value.username;
+    const password = form.value.password;
   }
 }

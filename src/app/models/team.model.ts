@@ -10,8 +10,8 @@ export class Team {
     public teamLead: User,
     public teamUsers: TeamMember[],
 
-    public longitude: number,
     public latitude: number,
+    public longitude: number,
     public radius: number
     ) { }
 }

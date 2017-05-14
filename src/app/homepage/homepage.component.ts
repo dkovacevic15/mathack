@@ -1,3 +1,4 @@
+import { ModelService } from './../services/model.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private modelService: ModelService
+  ) { }
 
   ngOnInit() {
   }

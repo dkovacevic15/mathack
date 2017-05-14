@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { Routes, RouterModule } from '@angular/router';
-
+import { AgmCoreModule } from 'angular2-google-maps/core';
 import { Ng2AutoCompleteModule } from 'ng2-auto-complete';
 
 import { AppComponent } from './app.component';
@@ -17,6 +17,7 @@ import { TeamspageComponent } from './teamspage/teamspage.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
+import { SidebarComponent } from './homepage/sidebar/sidebar.component';
 
 const appRoutes: Routes =
 [
@@ -34,14 +35,18 @@ const appRoutes: Routes =
     TeamspageComponent,
     SignupComponent,
     SigninComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    Ng2AutoCompleteModule
+    Ng2AutoCompleteModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAbIE00Qf19iA3JoYklpJQK5GVcWUgFiTo'
+    })
   ],
   providers: [
     ModelService,

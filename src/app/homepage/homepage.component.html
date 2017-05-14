@@ -1,35 +1,14 @@
-<div class="column col-xs-5" id="sidebar">
-  <div id="postlist">
-    <div class="panel">
-      <div class="panel-heading">
-        <div class="text-center">
-          <div class="row">
-            <div class="col-sm-8">
-              <h3 class="pull-left">Team FOOBAR</h3>
-            </div>
-            <div class="col-sm-4">
-              <h4 class="pull-right">
-                <small><em>24km<br>Mem: [2/4]</em></small>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="column col-xs-8">
+<sebm-google-map [latitude]="this.modelService.user.latitude" [longitude]="this.modelService.user.longitude" [zoom]="14">
+  <sebm-google-map-marker
+  *ngFor="let potentialTeam of this.modelService.potentialTeams"
+  [latitude]="potentialTeam.latitude"
+  [longitude]="potentialTeam.longitude"
+  [label]="potentialTeam.id.toLocaleString()">
 
-      <div class="panel-body">
-        Team Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
-
-      <div class="panel-footer">
-        <button class="btn btn-success">Colaborate</button>
-      </div>
-    </div>
-  </div>
+  </sebm-google-map-marker>
+</sebm-google-map>
 </div>
-
-
-
-<p>
-  homepage works!
-</p>
+<div class="column col-xs-4" id="sidebar">
+  <app-sidebar></app-sidebar>
+</div>
