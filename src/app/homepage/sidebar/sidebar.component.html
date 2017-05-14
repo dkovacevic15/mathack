@@ -1,34 +1,4 @@
 <div
 *ngFor="let team of teams" style="position:relative; margin-left:10px;">
-  <div class="panel">
-    <div class="panel-heading">
-      <div class="text-center">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3 class="pull-left">{{ team.name }}</h3>
-          </div>
-          <div class="col-sm-4">
-            <h5 class="pull-center">MOJA ULOGA</h5>
-          </div>
-          <div class="col-sm-4">
-            <h4 class="pull-right">
-              <small><em>NANkm<br>
-              
-              </em></small>
-            </h4>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel-body">
-      {{ team.description }}<br>
-     <em> <span *ngFor="let member of team.teamUsers"> {{ member.user.name }}, </span></em>
-    </div>
-
-    <div class="panel-footer ">
-      <button class="btn btn-danger pull-right" (click)="onCollaborateClicked(team)">Dismiss</button>
-      <button class="btn btn-success " (click)="onCollaborateClicked(team)">Colaborate</button>
-    </div>
-  </div>
+  <app-teamcard [team]="team"></app-teamcard>
 </div>

@@ -234,6 +234,10 @@ export class ModelService {
   constructor() { }
 
   attemptMatch(teamToMatch: Team) {
+    var index = this.potentialTeams.indexOf(teamToMatch);
+    if (index > -1) {
+      this.potentialTeams.splice(index, 1);
+    }
     const user = this.user;
     const team = teamToMatch;
 
