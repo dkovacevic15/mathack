@@ -12,7 +12,7 @@ export class AuthService {
 
   public authKey: any;
   
-  authUrl = 'localhost:5000';
+  authUrl = 'http://localhost:5000';
 
   constructor(private http: Http) { }
   
