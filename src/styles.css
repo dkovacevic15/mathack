@@ -10,3 +10,10 @@ body
     margin-top: 20px;
     z-index: 10;
 }
+
+.teamm-tag {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: #cecece;
+    margin-right: 3px;
+}
