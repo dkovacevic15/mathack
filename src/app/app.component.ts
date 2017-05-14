@@ -8,7 +8,7 @@ import { User } from './models/user.model';
 })
 export class AppComponent implements OnInit{
   ///////////////////////////////////////////////////
-  public testing: boolean = false;
+  public testing: boolean = true;
   //////////////////////////////////////////////////
   currentUser: User = undefined;
   constructor (private modelService: ModelService) { }
