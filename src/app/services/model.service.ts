@@ -13,7 +13,7 @@ export class ModelService {
   public user: User
   = new User(
     'dukicar',
-    0,
+    11,
     44.7796,
     20.4570,
     'dusankovacevic95@gmail.com',
@@ -31,6 +31,19 @@ export class ModelService {
     ],
     'Dusan',
     'Kovacevic');
+
+    public nullUser: User
+  = new User(
+    '',
+    0,
+    0,
+    0,
+    '',
+    '',
+    '',
+    [],
+    '',
+    '');
 
   // Teams to be matchmade
   public potentialTeams: Team[]
@@ -98,7 +111,22 @@ export class ModelService {
           79,
           'Front-end Developer',
           'Front-end developer u programu po svom izboru',
-          null,
+          new User(
+            'torimax',
+            7,
+            44.8031,
+            20.4596,
+            'pepan44@gmail.com',
+            '666666',
+            '44443333',
+            [
+              new Skill(
+                'Bootstrap',
+                5
+              ),
+            ],
+            'Aleksandar',
+            'Papadulovski'),
           [
             new Skill(
                 'Front-end',
@@ -111,35 +139,16 @@ export class ModelService {
       0
     ),
     new Team(
-      1,
-      'prvi',
-      'pa prvi',
+      2,
+      'gariJam',
+      'Opustena atmosfera, puno pica i projekat. Potrebno jos nesto?',
       null,
       [
         new TeamMember(
-          6,
-          'pozicija 1',
-          'opis pozicije 1',
-          new User(
-            'dukicar',
-            0,
-            0,
-            0,
-            'dusankovacevic95@gmail.com',
-            'sifra',
-            '2515-309',
-            [
-              new Skill(
-                'Angular (sorta)',
-                1
-              ),
-              new Skill(
-                'Being a faggot',
-                2
-              )
-            ],
-            'Dusan',
-            'Kovacevic'),
+          20,
+          'Gari 1',
+          'Potrebna samo dobra volja',
+          this.nullUser,
           []),
 
         new TeamMember(
