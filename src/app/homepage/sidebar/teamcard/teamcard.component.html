@@ -6,11 +6,11 @@
             <h3 class="pull-left">{{ team.name }}</h3>
           </div>
           <div class="col-sm-4">
-            <h5 class="pull-center">MOJA ULOGA</h5>
+            <h5 class="pull-center">Moja uloga</h5>
           </div>
           <div class="col-sm-4">
             <h4 class="pull-right">
-              <small><em>NANkm<br>
+              <small><em>24km<br>
               
               </em></small>
             </h4>
@@ -21,7 +21,9 @@
 
     <div class="panel-body">
       {{ team.description }}<br>
-     <em> <span *ngFor="let member of team.teamUsers"> {{ member.user.name }}, </span></em>
+     <em> <span *ngFor="let teamMember of team.teamUsers" class="teamm-tag">
+          {{teamMember.name}}: <span >{{ (teamMember.user.username == '') ? "empty" : teamMember.user.username}}</span>
+        </span></em>
     </div>
 
     <div class="panel-footer ">

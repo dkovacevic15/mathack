@@ -16,7 +16,7 @@
       </div>
       <div class="panel-footer">
         <span *ngFor="let teamMember of team.teamUsers" class="teamm-tag">
-          {{teamMember.name}}: <span >{{ (teamMember.user) ? "empty" : teamMember.user.name}}</span>
+          {{teamMember.name}}: <span >{{ (teamMember.user.name == '') ? "empty" : teamMember.user.name}}</span>
         </span>
       </div>
     </div>

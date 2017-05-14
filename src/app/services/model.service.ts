@@ -112,7 +112,7 @@ export class ModelService {
           'Front-end Developer',
           'Front-end developer u programu po svom izboru',
           new User(
-            'pepan44',
+            'torimax',
             7,
             44.8031,
             20.4596,
@@ -121,16 +121,12 @@ export class ModelService {
             '44443333',
             [
               new Skill(
-                'Java',
+                'Bootstrap',
                 5
               ),
-              new Skill(
-                'OSGI',
-                6
-              )
             ],
             'Aleksandar',
-            'Papanovski'),
+            'Papadulovski'),
           [
             new Skill(
                 'Front-end',
